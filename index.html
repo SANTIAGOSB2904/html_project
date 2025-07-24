@@ -7,6 +7,17 @@
     <link rel="icon" href="img/html_logo.png">
 </head>
 <style>
+    table, th, td{
+        border-spacing: 10px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    th, td {
+        background-color: rgba(65, 105, 225, 0.2);
+    }
+    tr:hover {
+        background-color: rgba(77, 116, 235, 0.5);
+    }
     body {
         background-image: url("img/codingbackground.jpg");
         background-repeat: no-repeat;
@@ -38,7 +49,7 @@
     <main>
         <section style="margin-bottom: 100px;">
             <!--This section is the header from my web-->
-            <h1 style="color:red; font-size:60px; background-color: rgb(136, 221, 124); text-align: center;">
+            <h1 style="color:red; font-size:60px; background-color: rgba(136, 221, 124,0.4); text-align: center;">
                 WELCOME TO MY BLOG!
             </h1>
             <figure>
@@ -64,13 +75,31 @@
             <pre style="color: red">
                 <strong>Per aspera ad astra</strong>
             </pre>
-        <p>Here is a phrase from Alan Turing</p>
+            <p>Here is a phrase from Alan Turing</p>
             <blockquote cite="https://www.google.com/search?q=frases+alan+turing&sxsrf=AE3TifNhTL5lat_uKeWRp5azXZWDuZBBNA%3A1753317682754">
                 "Podemos saber poco del futuro, pero lo suficiente para darnos cuenta de que hay mucho que hacer"
                 <address>
                     <sub>Alan Turing</sub>
                 </address>
             </blockquote>
+            <table>
+                <caption style="padding: 2.5px;">Skills</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Time</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Html</td>
+                    <td>2 years </td>
+                    <td>24/07/2023</td>
+                </tr>
+                <tr>
+                    <td>python</td>
+                    <td>1 year</td>
+                    <td>24/07/2024</td>
+                </tr>
+            </table>
         </section>
         <hr>
         <section>
