@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Web Page</title>
+    <link rel="icon" href="img/html_logo.png">
 </head>
 <style>
     body {
-        background-color: rgb(170, 170, 230);
+        background-image: url("img/codingbackground.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
         font-family: Arial, Helvetica, sans-serif;
+        color: white
     }
     a:link, a:visited {
         color: black;
@@ -39,7 +44,7 @@
             <figure>
                 <figcaption style="color: rgb(9, 99, 9);">
                     <img id="meimg" style="border: 2px solid rgb(16, 4, 124); padding: 20px; float: left; margin-right: 20px;" title="santiago" src="img/me.png" alt="LogoHtml" width="120" height="150">
-                    <p style="padding-top: 50px;">Santiago sepúlveda<br>Web developer<br></p>
+                    <p style="padding-top: 50px; color: white">Santiago sepúlveda<br>Web developer<br></p>
                 </figcaption>
                 <a href="#aboutme">about me</a>
             </figure>
@@ -51,7 +56,7 @@
         <hr>
         <section>
             <!--Here is a little information about me -->
-            <h2  id="aboutme" style="background-color: rgb(226, 226, 140); text-align: center;">
+            <h2  id="aboutme" style="background-color: rgb(226, 226, 140); text-align: center; color: Black;">
                 ABOUT ME
             </h2>
             <p>My name is santiago sepúlveda blanco<br> i'm studing to be a fullstack developer</p>
@@ -69,16 +74,23 @@
         </section>
         <hr>
         <section>
-            <h2 style="background-color: rgb(226, 226, 140); text-align: center;">
+            <h2 style="background-color: rgb(226, 226, 140); text-align: center; color: black;">
                 SKILLS ADQUIRED
             </h2>
             <ul>
                 <li>    
-                    <figure style="background-color: orange;">
-                        <img style="padding: 5px;" src="img/html_logo.png" alt="html_logo" width="30" height="30">
-                        <figcaption><sub>HTML</sub></figcaption>
+                    <figure>
+                        <img style="margin: 5px;" src="img/html_logo.png" alt="html_logo" width="30" height="30">
+                        <figcaption><sub>Html</sub></figcaption>
                     </figure>
                 </li>
+                <li>
+                    <figure>
+                        <img src="img/python.png" alt="python image" width="30" height="30">
+                        <figcaption><sub>Python</sub></figcaption>
+                    </figure>
+                </li>
+            </ul>
             <p>Here is a link to my <a target="_blank" href="https://github.com/SANTIAGOSB2904">Git Hub</a></p>
             <button onclick="document.location='//github.com/SANTIAGOSB2904'">Click me!</button>
             <p>Here is my <strong>email: </strong><a href="mailto:santsepulveda29@gmail.com">santsepulveda29@gmail.com</a></p>
