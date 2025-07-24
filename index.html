@@ -3,44 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Santiago Web Page</title>
 </head>
-<body style="background-color: rgb(170, 170, 230); font-family: Arial, Helvetica, sans-serif">
+<style>
+    body {
+        background-color: rgb(170, 170, 230);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a:link, a:visited {
+        color: black;
+        background-color: rgb(63, 189, 80);
+        border: 2px solid white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+    }
+    a:hover, a:active {
+        background-color: rgb(255, 255, 0);
+        color: black;
+    }
+    img{
+        background-color: rgb(202, 140, 140);
+    }
+    img:hover {
+        background-color: rgb(255, 0, 0);
+    }
+</style>
+<body>
     <main>
-        <section>
+        <section style="margin-bottom: 100px;">
+            <!--This section is the header from my web-->
             <h1 style="color:red; font-size:60px; background-color: rgb(136, 221, 124); text-align: center;">
                 WELCOME TO MY BLOG!
             </h1>
-            <figure style="text-align: center;">
-                <img title="i´m a tool tip" src="img/me.png" alt="LogoHtml" width="120" height="150">
-                <figcaption style="color: rgb(9, 99, 9)">Santiago sepúlveda<br>Web developer</figcaption>
+            <figure>
+                <figcaption style="color: rgb(9, 99, 9);">
+                    <img id="meimg" style="border: 2px solid rgb(16, 4, 124); padding: 20px; float: left; margin-right: 20px;" title="santiago" src="img/me.png" alt="LogoHtml" width="120" height="150">
+                    <p style="padding-top: 50px;">Santiago sepúlveda<br>Web developer<br></p>
+                </figcaption>
+                <a href="#aboutme">about me</a>
             </figure>
+        </section>
+        <section> 
             <p>This website is a little <strong>html</strong> project</p>
+            <a href="https://github.com/SANTIAGOSB2904">Clik me!</a>
         </section>
         <hr>
         <section>
-            <h2 style="background-color: rgb(226, 226, 140)">
-                About Me
+            <!--Here is a little information about me -->
+            <h2  id="aboutme" style="background-color: rgb(226, 226, 140); text-align: center;">
+                ABOUT ME
             </h2>
             <p>My name is santiago sepúlveda blanco<br> i'm studing to be a fullstack developer</p>
             <p>Im 19 years old and i live n Colombia</p>
             <pre style="color: red">
                 <strong>Per aspera ad astra</strong>
             </pre>
+        <p>Here is a phrase from Alan Turing</p>
+            <blockquote cite="https://www.google.com/search?q=frases+alan+turing&sxsrf=AE3TifNhTL5lat_uKeWRp5azXZWDuZBBNA%3A1753317682754">
+                "Podemos saber poco del futuro, pero lo suficiente para darnos cuenta de que hay mucho que hacer"
+                <address>
+                    <sub>Alan Turing</sub>
+                </address>
+            </blockquote>
         </section>
         <hr>
         <section>
-            <h2 style="background-color: rgb(226, 226, 140)">
-                Skills Adquired
+            <h2 style="background-color: rgb(226, 226, 140); text-align: center;">
+                SKILLS ADQUIRED
             </h2>
             <ul>
-                <li>HTML</li>
-            <p>Here is a link to my <a href="https://github.com/SANTIAGOSB2904">Git Hub</a></p>
+                <li>    
+                    <figure style="background-color: orange;">
+                        <img style="padding: 5px;" src="img/html_logo.png" alt="html_logo" width="30" height="30">
+                        <figcaption><sub>HTML</sub></figcaption>
+                    </figure>
+                </li>
+            <p>Here is a link to my <a target="_blank" href="https://github.com/SANTIAGOSB2904">Git Hub</a></p>
+            <button onclick="document.location='//github.com/SANTIAGOSB2904'">Click me!</button>
+            <p>Here is my <strong>email: </strong><a href="mailto:santsepulveda29@gmail.com">santsepulveda29@gmail.com</a></p>
         </section>
         <hr>
         <section>
             <form action="submit">
                 <fieldset>
+                    <legend>Here go your comments</legend>
                     <input id="username" type="text"  placeholder="Name" reuired>
                     <input id="email" type="email" placeholder="Email" required>
                     <textarea id="message" placeholder="Message" required></textarea>
