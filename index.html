@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Web Page</title>
     <link rel="icon" href="img/html_logo.png">
+    <script>
+        function myfunction(){
+            document.getElementById("text").innerHTML = "Hello this is a little javascript function";
+            document.getElementById("text").style.color = "yellow";
+            document.getElementById("text").style.fontSize = "20px";
+        }
+    </script>
     <style>
     div.future_project {
         width: 100%;
@@ -35,7 +42,8 @@
         background-size: cover;
         background-attachment: fixed;
         font-family: Arial, Helvetica, sans-serif;
-        color: white
+        color: white;
+        margin-top: 0;
     }
     a:link, a:visited {
         color: black;
@@ -55,123 +63,125 @@
     img:hover {
         background-color: rgb(255, 0, 0);
     }
+
 </style>
 </head>
 <body>
-    <main>
-        <section style="margin-bottom: 100px;">
-            <!--This section is the header from my web-->
-            <h1 style="color:red; font-size:60px; background-color: rgba(136, 221, 124,0.4); text-align: center;">
-                WELCOME TO MY BLOG!
-            </h1>
-            <figure>
-                <figcaption style="color: rgb(9, 99, 9);">
-                    <img id="meimg" style="border: 2px solid rgb(16, 4, 124); padding: 20px; float: left; margin-right: 20px;" title="santiago" src="img/me.png" alt="LogoHtml" width="120" height="150">
-                    <p style="padding-top: 50px; color: white">Santiago sepúlveda<br>Web developer<br></p>
-                </figcaption>
-                <a href="#aboutme">about me</a>
-            </figure> 
-        </section>
-        <section> 
-            <p>This website is a little <strong>html</strong> project</p>
-            <a href="https://github.com/SANTIAGOSB2904">Clik me!</a>
-        </section>
-        <hr>
-        <section>
-            <!--Here is a little information about me -->
-            <h2  id="aboutme" style="background-color: rgb(226, 226, 140); text-align: center; color: Black;">
-                ABOUT ME
-            </h2>
-            <p>My name is santiago sepúlveda blanco<br> i'm studing to be a fullstack developer</p>
-            <p>Im 19 years old and i live n Colombia</p>
-            <pre style="color: red">
-                <strong>Per aspera ad astra</strong>
-            </pre>
-            <p>Here is a phrase from Alan Turing</p>
-            <blockquote cite="https://www.google.com/search?q=frases+alan+turing&sxsrf=AE3TifNhTL5lat_uKeWRp5azXZWDuZBBNA%3A1753317682754">
-                "Podemos saber poco del futuro, pero lo suficiente para darnos cuenta de que hay mucho que hacer"
-                <address>
-                    <sub>Alan Turing</sub>
-                </address>
-            </blockquote>
-            <table>
-                <caption style="padding: 2.5px;">Skills</caption>
-                <tr>
-                    <th>Name</th>
-                    <th>Time</th>
-                    <th>Date</th>
-                </tr>
-                <tr>
-                    <td>Html</td>
-                    <td>2 years </td>
-                    <td>24/07/2023</td>
-                </tr>
-                <tr>
-                    <td>python</td>
-                    <td>1 year</td>
-                    <td>24/07/2024</td>
-                </tr>
-            </table>
-        </section>
-        <hr>
-        <section>
-            <h2 style="background-color: rgb(226, 226, 140); text-align: center; color: black;">
-                SKILLS ADQUIRED
-            </h2>
-            <ul>
-                <li>    
-                    <figure>
-                        <img style="margin: 5px;" src="img/html_logo.png" alt="html_logo" width="30" height="30">
-                        <figcaption><sub>Html</sub></figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="img/python.png" alt="python image" width="30" height="30">
-                        <figcaption><sub>Python</sub></figcaption>
-                    </figure>
-                </li>
-            </ul>
-            <p>Here is a link to my <a target="_blank" href="https://github.com/SANTIAGOSB2904">Git Hub</a></p>
-            <button onclick="document.location='//github.com/SANTIAGOSB2904'">Click me!</button>
-            <p>Here is my <strong>email: </strong><a href="mailto:santsepulveda29@gmail.com">santsepulveda29@gmail.com</a></p>
-        </section>
-        <div class="future_project">
-            <div>
-                <h3>What is this?</h3>
-                This webpage is only the base for a future project, where i will go to use all the knowledge that i have
-            </div>
-            <div>
-                <h3>What i think to do?</h3>
-                <p>I want make a webpage where the people find all my projects and read about me</p>
-            </div>
-            <div>
-                <h3>What knowledges i´m going to use</h3>
-                <p>I´m going to use technologies like html, css, javascript, some frameworks, python, SQL, and new knowledges that i will learn</p>
-            </div>
+    <section style="margin-bottom: 100px;">
+        <!--This section is the header from my web-->
+        <h1 style="color:red; font-size:60px; background-color: rgba(136, 221, 124,0.4); text-align: center; margin-top: 0;">
+            WELCOME TO MY BLOG!
+        </h1>
+        <figure>
+            <figcaption style="color: rgb(9, 99, 9);">
+                <img id="meimg" style="border: 2px solid rgb(16, 4, 124); padding: 20px; float: left; margin-right: 20px;" title="santiago" src="img/me.png" alt="LogoHtml" width="120" height="150">
+                <p style="padding-top: 50px; color: white">Santiago sepúlveda<br>Web developer<br></p>
+            </figcaption>
+            <a href="#aboutme">about me</a>
+        </figure> 
+    </section>
+    <section> 
+        <p>This website is a little <strong>html</strong> project</p>
+        <button type="button" onclick="myfunction()">
+            Click me!
+        </button>
+        <p id="text">Hello!</p>
+    </section>
+    <hr>
+    <section>
+        <!--Here is a little information about me -->
+        <h2  id="aboutme" style="background-color: rgb(226, 226, 140); text-align: center; color: Black;">
+            ABOUT ME
+        </h2>
+        <p>My name is santiago sepúlveda blanco<br> i'm studing to be a fullstack developer</p>
+        <p>Im 19 years old and i live n Colombia</p>
+        <pre style="color: red">
+            <strong>Per aspera ad astra</strong>
+        </pre>
+        <p>Here is a phrase from Alan Turing</p>
+        <blockquote cite="https://www.google.com/search?q=frases+alan+turing&sxsrf=AE3TifNhTL5lat_uKeWRp5azXZWDuZBBNA%3A1753317682754">
+            "Podemos saber poco del futuro, pero lo suficiente para darnos cuenta de que hay mucho que hacer"
+            <address>
+                <sub>Alan Turing</sub>
+            </address>
+        </blockquote>
+        <table>
+            <caption style="padding: 2.5px;">Skills</caption>
+            <tr>
+                <th>Name</th>
+                <th>Time</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <td>Html</td>
+                <td>2 years </td>
+                <td>24/07/2023</td>
+            </tr>
+            <tr>
+                <td>python</td>
+                <td>1 year</td>
+                <td>24/07/2024</td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <section>
+        <h2 style="background-color: rgb(226, 226, 140); text-align: center; color: black;">
+            SKILLS ADQUIRED
+        </h2>
+        <ul>
+            <li>    
+                <figure>
+                    <img style="margin: 5px;" src="img/html_logo.png" alt="html_logo" width="30" height="30">
+                    <figcaption><sub>Html</sub></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/python.png" alt="python image" width="30" height="30">
+                    <figcaption><sub>Python</sub></figcaption>
+                </figure>
+            </li>
+        </ul>
+        <p>Here is a link to my <a target="_blank" href="https://github.com/SANTIAGOSB2904">Git Hub</a></p>
+        <button onclick="document.location='//github.com/SANTIAGOSB2904'">Click me!</button>
+        <p>Here is my <strong>email: </strong><a href="mailto:santsepulveda29@gmail.com">santsepulveda29@gmail.com</a></p>
+    </section>
+    <div class="future_project">
+        <div>
+            <h3>What is this?</h3>
+            This webpage is only the base for a future project, where i will go to use all the knowledge that i have
         </div>
-        <hr>
-        <section>
-            <form action="submit">
-                <fieldset>
-                    <legend>Here go your comments</legend>
-                    <input id="username" type="text"  placeholder="Name" reuired>
-                    <input id="email" type="email" placeholder="Email" required>
-                    <textarea id="message" placeholder="Message" required></textarea>
-                    <button type="submit">Submit</button>
-                </fieldset>
-                <fieldset>
-                    <legend>What kind of developer you are?</legend>
-                    <input checked type="checkbox" id="fullstack" name="kind_of_developer" value="fullstack">
-                    <label for="fullstack">Subscribe to newsletter</label>
-                    <input type="checkbox" id="senior" name="kind_of_developer" value="senior">
-                    <label checkbox for="senior">Senior</label>
-                    <input type="checkbox"o id="junior" name="kind_of_developer" value="junior">
-                    <label for="junior">Junior</label>
-                </fieldset>
-            </form>
-        </section>
-    </main>
+        <div>
+            <h3>What i think to do?</h3>
+            <p>I want make a webpage where the people find all my projects and read about me</p>
+        </div>
+        <div>
+            <h3>What knowledges i´m going to use</h3>
+            <p>I´m going to use technologies like html, css, javascript, some frameworks, python, SQL, and new knowledges that i will learn</p>
+        </div>
+    </div>
+    <hr>
+    <section>
+        <form action="submit">
+            <fieldset>
+                <legend>Here go your comments</legend>
+                <input id="username" type="text"  placeholder="Name" reuired>
+                <input id="email" type="email" placeholder="Email" required>
+                <textarea id="message" placeholder="Message" required></textarea>
+                <button type="submit">Submit</button>
+            </fieldset>
+            <fieldset>
+                <legend>What kind of developer you are?</legend>
+                <input checked type="checkbox" id="fullstack" name="kind_of_developer" value="fullstack">
+                <label for="fullstack">Subscribe to newsletter</label>
+                <input type="checkbox" id="senior" name="kind_of_developer" value="senior">
+                <label checkbox for="senior">Senior</label>
+                <input type="checkbox"o id="junior" name="kind_of_developer" value="junior">
+                <label for="junior">Junior</label>
+            </fieldset>
+        </form>
+    </section>
     <footer style="background-color: rgb(99, 219, 99);">
         my blog &copy; 2023 santiago sepúlveda Blanco
     </footer>
